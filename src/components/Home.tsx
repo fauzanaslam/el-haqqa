@@ -1,4 +1,4 @@
-import banner from "../assets/banner.png";
+import banner from "../assets/hero.png";
 import Banner from "../shared/Banner";
 
 const Home = () => {
@@ -6,10 +6,10 @@ const Home = () => {
     <div className="md:px-12 p-4 max-w-screen-2xl mx-auto mt-24" id="home">
       <Banner
         banner={banner}
-        heading="Lorem ipsum dolor sit amet."
-        subheading="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil dicta quas tenetur reiciendis tempora consequatur illo voluptas aliquid ut sit!"
+        heading="Flashsoft Indonesia"
+        subheading="Software Development and Programming School"
         btn1="Get Started"
-        btn2="Discount"
+        // btn2="Discount"
       />
     </div>
   );

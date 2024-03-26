@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/flashsoft.png";
-import { GrLanguage } from "react-icons/gr";
+// import { GrLanguage } from "react-icons/gr";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { Link } from "react-scroll";
 
@@ -12,10 +12,10 @@ const Navbar = () => {
   };
 
   const navItem = [
-    { link: "Overview", path: "home" },
-    { link: "Feature", path: "feature" },
-    { link: "About", path: "about" },
-    { link: "Pricing", path: "pricing" },
+    { link: "Beranda", path: "home" },
+    { link: "Fitur", path: "feature" },
+    { link: "Tentang", path: "about" },
+    { link: "Harga", path: "pricing" },
   ];
   return (
     <>
@@ -31,7 +31,7 @@ const Navbar = () => {
                 alt=""
                 className="w-10 inline-block items-center"
               />
-              <span>Flashsoft</span>
+              <span>Flashsoft Indonesia</span>
             </a>
             <ul className="md:flex space-x-12 hidden">
               {navItem.map(({ link, path }) => (
@@ -49,7 +49,7 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          <div className="space-x-12 hidden md:flex items-center">
+          {/* <div className="space-x-12 hidden md:flex items-center">
             <a href="/" className="hidden lg:flex items-center">
               <GrLanguage className="mr-2" />
               <span className="hover:text-secondary">Language</span>
@@ -57,7 +57,7 @@ const Navbar = () => {
             <button className="bg-secondary py-2 px-4 transition-all duration-300 rounded hover:text-white hover:bg-indigo-600">
               Sign up
             </button>
-          </div>
+          </div> */}
           <div className="md:hidden">
             <button
               onClick={toggleMenu}

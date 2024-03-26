@@ -1,5 +1,5 @@
-import aboutImg from "../assets/aboutImg.png";
-import aboutImg2 from "../assets/aboutImg2.png";
+import aboutImg from "../assets/about.png";
+import aboutImg2 from "../assets/expert2.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
@@ -24,14 +24,12 @@ const About = () => {
           className="md:w-2/5"
         >
           <h2 className="md:text-5xl text-3xl font-bold text-primary mb-5 leading-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium, error{" "}
-            <span className="text-secondary">lorem ipsum</span>
+            Belajar sesuai kurikulum kuliah dan
+            <span className="text-yellow"> standar industri global</span>
           </h2>
           <p className="text-tartiary text-lg mb-7">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-            tempora dolores temporibus repudiandae provident non praesentium
-            magni beatae eum consectetur?
+            Flashsoft Indonesia tersedia bagi kamu yang masih kuliah dan ingin
+            menjadi seorang web developer.
           </p>
           <button className="btnPrimary">Get Started</button>
         </motion.div>
@@ -54,14 +52,12 @@ const About = () => {
           className="md:w-2/5"
         >
           <h2 className="md:text-5xl text-3xl font-bold text-primary mb-5 leading-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium, error{" "}
-            <span className="text-secondary">lorem ipsum</span>
+            Dibimbing oleh mentor yang
+            <span className="text-yellow"> Profesional</span>
           </h2>
           <p className="text-tartiary text-lg mb-7">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-            tempora dolores temporibus repudiandae provident non praesentium
-            magni beatae eum consectetur?
+            Sebagai platform edukasi, Flashsoft indonesia bekerja sama dengan
+            mitra yang sudah expert dibidangnya.
           </p>
           <button className="btnPrimary">Get Started</button>
         </motion.div>

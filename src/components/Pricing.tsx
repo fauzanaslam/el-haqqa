@@ -7,28 +7,26 @@ const Pricing = () => {
 
   const packages = [
     {
-      name: "Start",
-      monthlyPrice: 19,
-      yearlyPrice: 199,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nam.",
-      green: "/src/assets/rec1.png",
+      name: "Coolyeah",
+      monthlyPrice: "340.000",
+      yearlyPrice: "1.232.000",
+      description: "PHP / Java / C / Andriod / Python / JavaScript",
+      yellow: "/src/assets/yellowDot.png",
     },
     {
-      name: "Advance",
-      monthlyPrice: 39,
-      yearlyPrice: 399,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nam.",
+      name: "Private",
+      monthlyPrice: "1.150.000",
+      yearlyPrice: "2.950.000",
+      description: "PHP / Java / C / Andriod / Python / JavaScript",
       green: "/src/assets/rec1.png",
+      yellow: "/src/assets/yellowDot.png",
     },
     {
-      name: "Premium",
-      monthlyPrice: 59,
-      yearlyPrice: 599,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nam.",
-      green: "/src/assets/rec1.png",
+      name: "Live Coding",
+      monthlyPrice: "1.550.000",
+      yearlyPrice: "2.950.000",
+      description: "PHP / Java / C / Andriod / Python / JavaScript",
+      yellow: "/src/assets/yellowDot.png",
     },
   ];
 
@@ -36,17 +34,17 @@ const Pricing = () => {
     <div className="md:px-14 p-4 max-w-s mx-auto py-10" id="pricing">
       <div className="text-center">
         <h2 className="md:text-5xl text-3xl font-extrabold text-primary mb-2">
-          Lorem ipsum dolor sit amet.
+          Beberapa kelas yang dapat kamu pilih
         </h2>
         <p className="text-tartiary md:w-1/3 mx-auto px-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nam.
+          kamu bebas memilih kelas yang ingin kamu ikuti
         </p>
         <div className="mt-16">
           <label
             htmlFor="toggle"
             className="inline-flex items-center cursor-pointer"
           >
-            <span className="mr-8 text-2xl font-semibold">Monthly</span>
+            <span className="mr-8 text-2xl font-semibold">Bulanan</span>
             <div className="relative w-14 h-6 bg-gray-300 rounded-full transition duration-200 ease-in-out">
               <div
                 className={`absolute left-0 w-7 h-7 rounded-full transition duration-200 ease-in-out ${
@@ -56,7 +54,7 @@ const Pricing = () => {
                 }`}
               ></div>
             </div>
-            <span className="ml-8 text-2xl font-semibold">Yearly</span>
+            <span className="ml-8 text-2xl font-semibold">Complete</span>
           </label>
           <input
             type="checkbox"
@@ -83,40 +81,48 @@ const Pricing = () => {
               {pkg.name}
             </h3>
             <p className="text-tartiary text-center my-5">{pkg.description}</p>
-            <p className="mt-5 text-center text-secondary text-4xl font-bold">
+            <p className="mt-5 text-center text-red text-2xl font-bold">
               {isYearly ? `Rp.${pkg.yearlyPrice}` : `Rp.${pkg.monthlyPrice}`}
               <span className="text-base text-tartiary font-medium">
-                /{isYearly ? "year" : "month"}
+                /{isYearly ? "3 bulan" : "bulan"}
               </span>
             </p>
             <ul className="mt-4 space-y-2 px-4">
               <li className="flex gap-3 items-center">
-                <img src={pkg.green} alt="" className="w-4 h-4" />
-                Lorem ipsum dolor sit amet.
+                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                durasi 120 menit
               </li>
               <li className="flex gap-3 items-center">
-                <img src={pkg.green} alt="" className="w-4 h-4" />
-                Lorem ipsum dolor sit amet.
+                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                Reguler Senin - Jumat
               </li>
               <li className="flex gap-3 items-center">
-                <img src={pkg.green} alt="" className="w-4 h-4" />
-                Lorem ipsum dolor sit amet.
+                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                Reguler Pagi/Siang
               </li>
               <li className="flex gap-3 items-center">
-                <img src={pkg.green} alt="" className="w-4 h-4" />
-                Lorem ipsum dolor sit amet.
+                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                Tersedia Non-Reguler
               </li>
               <li className="flex gap-3 items-center">
-                <img src={pkg.green} alt="" className="w-4 h-4" />
-                Lorem ipsum dolor sit amet.
+                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                Free Konsultasi
               </li>
               <li className="flex gap-3 items-center">
-                <img src={pkg.green} alt="" className="w-4 h-4" />
-                Lorem ipsum dolor sit amet.
+                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                Free Komunitas
               </li>
               <li className="flex gap-3 items-center">
-                <img src={pkg.green} alt="" className="w-4 h-4" />
-                Lorem ipsum dolor sit amet.
+                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                Mentor Berpengalaman
+              </li>
+              <li className="flex gap-3 items-center">
+                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                Private Full Belajar
+              </li>
+              <li className="flex gap-3 items-center">
+                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                Instan dan Belajar
               </li>
             </ul>
             <div className="w-full mx-auto mt-8 flex items-center justify-center">

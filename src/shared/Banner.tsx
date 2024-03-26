@@ -1,18 +1,19 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+// import { Link } from "react-router-dom";
 
 const Banner = ({
   banner,
   heading,
   subheading,
   btn1,
-  btn2,
-}: {
+}: // btn2,
+{
   banner: string;
   heading: string;
   subheading: string;
   btn1: string;
-  btn2: string;
+  // btn2: string;
 }) => {
   return (
     <div className="gradientBg rounded-xl rounded-br-[80px] md:p-9 px-4 py-9">
@@ -35,10 +36,12 @@ const Banner = ({
           <h2 className="md:text-7xl text-4xl font-bold text-white mb-6 leading-relaxed">
             {heading}
           </h2>
-          <p className="text-[#EBEBEB] text-2xl mb-8">{subheading}</p>
+          <p className="text-black text-2xl mb-8">{subheading}</p>
           <div className="space-x-5 sapce-y-4">
+            {/* <Link to={""}> */}
             <button className="btnPrimary">{btn1}</button>
-            <button className="btnPrimary">{btn2}</button>
+            {/* </Link> */}
+            {/* <button className="btnPrimary">{btn2}</button> */}
           </div>
         </motion.div>
       </div>

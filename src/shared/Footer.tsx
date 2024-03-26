@@ -14,13 +14,10 @@ const Footer = () => {
             className="text-2xl font-semibold items-center space-x-3 text-primary"
           >
             <img src={logo} alt="" className="w-10 inline-block items-center" />
-            <span className="text-white">Flashsoft</span>
+            <span className="text-white">Flashsoft Indonesia</span>
           </a>
-          <p className="md-1/2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
-            praesentium!
-          </p>
-          <div>
+          <p className="md-1/2">Software Development and Training Center</p>
+          {/* <div>
             <input
               type="email"
               name="email"
@@ -33,7 +30,7 @@ const Footer = () => {
               value="Subcribe"
               className="px-4 py-2 bg-secondary rounded-md ml-2 cursor-pointer hover:bg-white hover:text-primary transition-all duration-300"
             />
-          </div>
+          </div> */}
         </div>
         <div className="md:w-1/2 flex flex-col md:flex-row flex-wrap justify-between gap-8 items-start">
           <div className="space-y-4 mt-5">
@@ -57,33 +54,33 @@ const Footer = () => {
             <h4 className="text-xl">Help</h4>
             <ul className="space-y-3">
               <a href="" className="block hover:text-gray-300">
-                Overview
+                How does it works?
               </a>
               <a href="" className="block hover:text-gray-300">
-                Features
+                Where to ask question?
               </a>
               <a href="" className="block hover:text-gray-300">
-                About
+                How to play?
               </a>
               <a href="" className="block hover:text-gray-300">
-                Pricing
+                What is needed for this?
               </a>
             </ul>
           </div>
           <div className="space-y-4 mt-5">
-            <h4 className="text-xl">Contact</h4>
+            <h4 className="text-xl">Contacts</h4>
             <ul className="space-y-3">
-              <p className="hover:text-gray-300">Overview</p>
-              <p className="hover:text-gray-300">Features</p>
-              <p className="hover:text-gray-300">About</p>
-              <p className="hover:text-gray-300">Pricing</p>
+              <p className="hover:text-gray-300">0852 1234 5678</p>
+              <p className="hover:text-gray-300">flashsoft@gmail.com</p>
+              {/* <p className="hover:text-gray-300">About</p>
+              <p className="hover:text-gray-300">Pricing</p> */}
             </ul>
           </div>
         </div>
       </div>
       <hr />
       <div className="flex flex-col sm:flex-row gap-8 sm:items-center justify-between my-8">
-        <p>@ Flashsoft 2024. All rights reversed</p>
+        <p>@ Flashsoft Indonesia 2024. All rights reversed</p>
         <div className="flex items-center space-x-5">
           <img
             src={fb}
