@@ -8,7 +8,7 @@ const Newslatter = () => {
         banner={bannerImg}
         heading="Tunggu apalagi?"
         subheading="Belajar dengan kurikulum terupdate dan di mentorin oleh expert"
-        btn1="Whatsapp"
+        btn1="Hubungi Kami"
         // btn2=""
       />
     </div>

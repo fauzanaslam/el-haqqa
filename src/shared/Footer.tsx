@@ -1,7 +1,6 @@
 import logo from "../assets/flashsoft.png";
 import fb from "../assets/facebookImg.png";
 import ig from "../assets/instagramImg.png";
-import tw from "../assets/twitterImg.png";
 import li from "../assets/linkedinImg.png";
 
 const Footer = () => {
@@ -70,10 +69,10 @@ const Footer = () => {
           <div className="space-y-4 mt-5">
             <h4 className="text-xl">Contacts</h4>
             <ul className="space-y-3">
-              <p className="hover:text-gray-300">0852 1234 5678</p>
-              <p className="hover:text-gray-300">flashsoft@gmail.com</p>
-              {/* <p className="hover:text-gray-300">About</p>
-              <p className="hover:text-gray-300">Pricing</p> */}
+              <p className="hover:text-gray-300">853 6383 4829</p>
+              <p className="hover:text-gray-300">
+                flashsoftindonesia@gmail.com
+              </p>
             </ul>
           </div>
         </div>
@@ -82,26 +81,27 @@ const Footer = () => {
       <div className="flex flex-col sm:flex-row gap-8 sm:items-center justify-between my-8">
         <p>@ Flashsoft Indonesia 2024. All rights reversed</p>
         <div className="flex items-center space-x-5">
-          <img
-            src={fb}
-            alt=""
-            className="w-8 cursor-pointer hover:-translate-y-4 transition-all duration-300"
-          />
-          <img
-            src={ig}
-            alt=""
-            className="w-8 cursor-pointer hover:-translate-y-4 transition-all duration-300"
-          />
-          <img
-            src={tw}
-            alt=""
-            className="w-8 cursor-pointer hover:-translate-y-4 transition-all duration-300"
-          />
-          <img
-            src={li}
-            alt=""
-            className="w-8 cursor-pointer hover:-translate-y-4 transition-all duration-300"
-          />
+          <a href="https://www.facebook.com/flashsoftindonesia/">
+            <img
+              src={fb}
+              alt=""
+              className="w-8 cursor-pointer hover:-translate-y-4 transition-all duration-300"
+            />
+          </a>
+          <a href="https://www.instagram.com/flashsoftindonesia/?hl=en">
+            <img
+              src={ig}
+              alt=""
+              className="w-8 cursor-pointer hover:-translate-y-4 transition-all duration-300"
+            />
+          </a>
+          <a href="https://www.linkedin.com/company/flashsoft-indonesia/mycompany/">
+            <img
+              src={li}
+              alt=""
+              className="w-8 cursor-pointer hover:-translate-y-4 transition-all duration-300"
+            />
+          </a>
         </div>
       </div>
     </div>

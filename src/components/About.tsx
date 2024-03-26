@@ -31,7 +31,12 @@ const About = () => {
             Flashsoft Indonesia tersedia bagi kamu yang masih kuliah dan ingin
             menjadi seorang web developer.
           </p>
-          <button className="btnPrimary">Get Started</button>
+          <a
+            className="btnPrimary"
+            href="https://api.whatsapp.com/send?phone=6285363834829"
+          >
+            Hubungi Kami
+          </a>{" "}
         </motion.div>
       </div>
       <div className="flex flex-col md:flex-row-reverse justify-between items-center gap-8">
@@ -59,7 +64,12 @@ const About = () => {
             Sebagai platform edukasi, Flashsoft indonesia bekerja sama dengan
             mitra yang sudah expert dibidangnya.
           </p>
-          <button className="btnPrimary">Get Started</button>
+          <a
+            className="btnPrimary"
+            href="https://api.whatsapp.com/send?phone=6285363834829"
+          >
+            Hubungi Kami
+          </a>
         </motion.div>
       </div>
     </div>

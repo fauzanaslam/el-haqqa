@@ -8,7 +8,7 @@ const Home = () => {
         banner={banner}
         heading="Flashsoft Indonesia"
         subheading="Software Development and Programming School"
-        btn1="Get Started"
+        btn1="Hubungi Kami"
         // btn2="Discount"
       />
     </div>

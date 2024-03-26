@@ -90,7 +90,7 @@ const Pricing = () => {
             <ul className="mt-4 space-y-2 px-4">
               <li className="flex gap-3 items-center">
                 <img src={pkg.yellow} alt="" className="w-4 h-4" />
-                durasi 120 menit
+                Durasi 120 menit
               </li>
               <li className="flex gap-3 items-center">
                 <img src={pkg.yellow} alt="" className="w-4 h-4" />
@@ -126,7 +126,12 @@ const Pricing = () => {
               </li>
             </ul>
             <div className="w-full mx-auto mt-8 flex items-center justify-center">
-              <button className="btnPrimary">Get Started</button>
+              <a
+                className="btnPrimary"
+                href="https://api.whatsapp.com/send?phone=6285363834829"
+              >
+                Hubungi Kami
+              </a>
             </div>
           </div>
         ))}

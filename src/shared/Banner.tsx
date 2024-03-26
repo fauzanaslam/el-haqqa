@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-// import { Link } from "react-router-dom";
 
 const Banner = ({
   banner,
@@ -38,10 +37,12 @@ const Banner = ({
           </h2>
           <p className="text-black text-2xl mb-8">{subheading}</p>
           <div className="space-x-5 sapce-y-4">
-            {/* <Link to={""}> */}
-            <button className="btnPrimary">{btn1}</button>
-            {/* </Link> */}
-            {/* <button className="btnPrimary">{btn2}</button> */}
+            <a
+              href="https://api.whatsapp.com/send?phone=6285363834829"
+              className="btnPrimary"
+            >
+              {btn1}
+            </a>
           </div>
         </motion.div>
       </div>
