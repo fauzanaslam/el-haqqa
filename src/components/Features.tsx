@@ -24,24 +24,42 @@ const Features = () => {
         </motion.div>
         <div>
           <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 item-start md:gap-12 gap-8">
-            <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 items-center justify-center hover:-translate-y-4 transition-all duration- 300 cursor-pointer">
+            <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 items-center justify-center hover:-translate-y-4 transition-all duration- 300 cursor-pointer"
+            >
               <img src={updateImg} alt="terupdate" />
               <h5 className="text-2xl font-semibold text-primary px-5 text-center mt-5">
                 Materi Terupdate
               </h5>
-            </div>
-            <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 items-center justify-center hover:-translate-y-4 transition-all duration- 300 cursor-pointer md:mt-16">
+            </motion.div>
+            <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 items-center justify-center hover:-translate-y-4 transition-all duration- 300 cursor-pointer md:mt-16"
+            >
               <img src={priceImg} alt="terjangkau" />
               <h5 className="text-2xl font-semibold text-primary px-5 text-center mt-5">
                 Harga terjangkau
               </h5>
-            </div>
-            <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 items-center justify-center hover:-translate-y-4 transition-all duration- 300 cursor-pointer">
+            </motion.div>
+            <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 items-center justify-center hover:-translate-y-4 transition-all duration- 300 cursor-pointer"
+            >
               <img src={fleksibleImg} alt="fleksible" />
               <h5 className="text-2xl font-semibold text-primary px-5 text-center mt-5">
                 Jadwal fleksibel
               </h5>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

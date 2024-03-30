@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
+import { fadeIn } from "../variants";
 // import { motion } from "framer-motion";
 // import { fadeIn } from "../variants";
 
@@ -67,7 +69,11 @@ const Pricing = () => {
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto">
         {packages.map((pkg, index) => (
-          <div
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
             key={index}
             className="border py-10 md:px-6 px-4 rounded-lg shadow-3xl"
           >
@@ -127,7 +133,7 @@ const Pricing = () => {
                 Hubungi Kami
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

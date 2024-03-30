@@ -37,7 +37,7 @@ const About = () => {
               href="https://api.whatsapp.com/send?phone=6285363834829"
             >
               Hubungi Kami
-            </a>{" "}
+            </a>
           </motion.div>
         </div>
         <div className="flex flex-col md:flex-row-reverse justify-between items-center gap-8">
