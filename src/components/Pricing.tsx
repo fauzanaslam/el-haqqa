@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { fadeIn } from "../variants";
-// import { motion } from "framer-motion";
-// import { fadeIn } from "../variants";
 
 const Pricing = () => {
   const [isYearly, setIsYearly] = useState(false);
@@ -13,6 +11,7 @@ const Pricing = () => {
       monthlyPrice: "340.000",
       yearlyPrice: "1.232.000",
       description: "PHP / Java / C / Andriod / Python / JavaScript",
+      green: "/src/assets/rec1.png",
       yellow: "/src/assets/yellowDot.png",
     },
     {
@@ -20,7 +19,7 @@ const Pricing = () => {
       monthlyPrice: "1.150.000",
       yearlyPrice: "2.950.000",
       description: "PHP / Java / C / Andriod / Python / JavaScript",
-      // green: "/src/assets/rec1.png",
+      green: "/src/assets/rec1.png",
       yellow: "/src/assets/yellowDot.png",
     },
     {
@@ -28,6 +27,8 @@ const Pricing = () => {
       monthlyPrice: "1.550.000",
       yearlyPrice: "2.950.000",
       description: "PHP / Java / C / Andriod / Python / JavaScript",
+      green: "/src/assets/rec1.png",
+
       yellow: "/src/assets/yellowDot.png",
     },
   ];
@@ -95,39 +96,39 @@ const Pricing = () => {
             </p>
             <ul className="mt-4 space-y-2 px-4">
               <li className="flex gap-3 items-center">
-                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                <img src={pkg.green} alt="" className="w-4 h-4" />
                 Durasi 120 menit
               </li>
               <li className="flex gap-3 items-center">
-                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                <img src={pkg.green} alt="" className="w-4 h-4" />
                 Reguler Senin - Jumat
               </li>
               <li className="flex gap-3 items-center">
-                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                <img src={pkg.green} alt="" className="w-4 h-4" />
                 Reguler Pagi/Siang
               </li>
               <li className="flex gap-3 items-center">
-                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                <img src={pkg.green} alt="" className="w-4 h-4" />
                 Tersedia Non-Reguler
               </li>
               <li className="flex gap-3 items-center">
-                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                <img src={pkg.green} alt="" className="w-4 h-4" />
                 Free Konsultasi
               </li>
               <li className="flex gap-3 items-center">
-                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                <img src={pkg.green} alt="" className="w-4 h-4" />
                 Free Komunitas
               </li>
               <li className="flex gap-3 items-center">
-                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                <img src={pkg.green} alt="" className="w-4 h-4" />
                 Mentor Berpengalaman
               </li>
               <li className="flex gap-3 items-center">
-                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                <img src={pkg.green} alt="" className="w-4 h-4" />
                 Private Full Belajar
               </li>
               <li className="flex gap-3 items-center">
-                <img src={pkg.yellow} alt="" className="w-4 h-4" />
+                <img src={pkg.green} alt="" className="w-4 h-4" />
                 Instan dan Belajar
               </li>
             </ul>
