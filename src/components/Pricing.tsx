@@ -34,7 +34,13 @@ const Pricing = () => {
 
   return (
     <div className="md:px-14 p-4 max-w-s mx-auto py-10" id="pricing">
-      <div className="text-center">
+      <motion.div
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="text-center"
+      >
         <h2 className="md:text-5xl text-3xl font-extrabold text-primary mb-2">
           Beberapa kelas yang dapat kamu pilih
         </h2>
@@ -66,7 +72,7 @@ const Pricing = () => {
             onChange={() => setIsYearly(!isYearly)}
           />
         </div>
-      </div>
+      </motion.div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto">
         {packages.map((pkg, index) => (
           <motion.div
