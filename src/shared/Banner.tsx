@@ -6,13 +6,11 @@ const Banner = ({
   heading,
   subheading,
   btn1,
-}: // btn2,
-{
+}: {
   banner: string;
   heading: string;
   subheading: string;
   btn1: string;
-  // btn2: string;
 }) => {
   return (
     <div className="gradientBg rounded-xl rounded-br-[80px] md:p-9 px-4 py-9">

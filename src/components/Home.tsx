@@ -9,7 +9,6 @@ const Home = () => {
         heading="Flashsoft Indonesia"
         subheading="Software Development and Programming School"
         btn1="Hubungi Kami"
-        // btn2="Discount"
       />
     </div>
   );

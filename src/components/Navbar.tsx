@@ -15,6 +15,7 @@ const Navbar = () => {
     { link: "Beranda", path: "home" },
     { link: "Fitur", path: "feature" },
     { link: "Tentang", path: "about" },
+    { link: "Artikel", path: "article" },
     { link: "Harga", path: "pricing" },
   ];
   return (
