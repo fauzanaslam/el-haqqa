@@ -1,25 +1,28 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import hackathon from "../assets/hackaton.png";
+import bukber from "../assets/bukber.png";
+import studyClub from "../assets/study-club.png";
 
 const items = [
   {
     title: "CLOUDCAMP Ramadhan Hackathon 2024",
     description:
       "Develop web semalaman full di CloudCamp Hackathon Ramadhan 2024. Banyak keseruan di event Hackathon, develop Landing Page untuk mitra UMKM yang keren keren.",
-    icon: "hackaton-min.png",
+    icon: hackathon,
   },
   {
     title: "Buka puasa bersama Flashsoft indonesia 2024",
     description:
       "Buka puasa bersama Ramadhan 1445 Hijriah. Tim, Mentor, Member, Volunteer dan Alumni Flashsoft Indonesia",
-    icon: "bukber-min.png",
+    icon: bukber,
   },
   {
     title: "Study Club Programming UNRI",
     description:
       "Dinas Pengembangan Potensi Akademik (PPA) HIMALKOM FMIPA UNRI bekerja sama dengan Flashsoft Indonesia dalam penyelenggaraan kegiatan Study Club Programming. ",
-    icon: "study-club-min.png",
+    icon: studyClub,
   },
 ];
 
@@ -41,7 +44,7 @@ const Article = () => {
               <div className="flex flex-col md:flex-row justify-between items-center gap-10">
                 <div>
                   <img
-                    src="/src/assets/bukber.png"
+                    src={item.icon}
                     alt={item.description}
                     className="lg-h-[386px]"
                   />
