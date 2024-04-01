@@ -41,7 +41,7 @@ const Article = () => {
               <div className="flex flex-col md:flex-row justify-between items-center gap-10">
                 <div>
                   <img
-                    src={`/src/assets/${item.icon}`}
+                    src="/src/assets/bukber.png"
                     alt={item.description}
                     className="lg-h-[386px]"
                   />
