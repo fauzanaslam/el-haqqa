@@ -7,19 +7,19 @@ const items = [
     title: "CLOUDCAMP Ramadhan Hackathon 2024",
     description:
       "Develop web semalaman full di CloudCamp Hackathon Ramadhan 2024. Banyak keseruan di event Hackathon, develop Landing Page untuk mitra UMKM yang keren keren.",
-    icon: "/src/assets/hackaton-min.png",
+    icon: "/src/assets/about.png",
   },
   {
     title: "Buka puasa bersama Flashsoft indonesia 2024",
     description:
       "Buka puasa bersama Ramadhan 1445 Hijriah. Tim, Mentor, Member, Volunteer dan Alumni Flashsoft Indonesia",
-    icon: "/src/assets/bukberimin.png",
+    icon: "/src/assets/expert.png",
   },
   {
     title: "Study Club Programming UNRI",
     description:
       "Dinas Pengembangan Potensi Akademik (PPA) HIMALKOM FMIPA UNRI bekerja sama dengan Flashsoft Indonesia dalam penyelenggaraan kegiatan Study Club Programming. ",
-    icon: "/src/assets/study-club-min.png",
+    icon: "/src/assets/expert2.png",
   },
 ];
 
