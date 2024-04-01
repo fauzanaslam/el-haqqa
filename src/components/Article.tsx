@@ -7,19 +7,19 @@ const items = [
     title: "CLOUDCAMP Ramadhan Hackathon 2024",
     description:
       "Develop web semalaman full di CloudCamp Hackathon Ramadhan 2024. Banyak keseruan di event Hackathon, develop Landing Page untuk mitra UMKM yang keren keren.",
-    icon: "/src/assets/about.png",
+    icon: "hackaton-min.png",
   },
   {
     title: "Buka puasa bersama Flashsoft indonesia 2024",
     description:
       "Buka puasa bersama Ramadhan 1445 Hijriah. Tim, Mentor, Member, Volunteer dan Alumni Flashsoft Indonesia",
-    icon: "/src/assets/expert.png",
+    icon: "bukber-min.png",
   },
   {
     title: "Study Club Programming UNRI",
     description:
       "Dinas Pengembangan Potensi Akademik (PPA) HIMALKOM FMIPA UNRI bekerja sama dengan Flashsoft Indonesia dalam penyelenggaraan kegiatan Study Club Programming. ",
-    icon: "/src/assets/expert2.png",
+    icon: "study-club-min.png",
   },
 ];
 
@@ -41,7 +41,7 @@ const Article = () => {
               <div className="flex flex-col md:flex-row justify-between items-center gap-10">
                 <div>
                   <img
-                    src={item.icon}
+                    src={`/src/assets/${item.icon}`}
                     alt={item.description}
                     className="lg-h-[386px]"
                   />
