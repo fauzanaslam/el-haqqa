@@ -1,25 +1,16 @@
 import "./App.css";
-import About from "./components/About";
-import Article from "./components/Article";
-import Features from "./components/Features";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Newslatter from "./components/Newslatter";
-import Pricing from "./components/Pricing";
-import Footer from "./shared/Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import DetailPage from "./pages/DetailPage";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Home />
-      <Features />
-      <About />
-      <Article />
-      <Pricing />
-      <Newslatter />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/:movieId" element={<DetailPage />} />
+      </Routes>
+    </Router>
   );
 }
 

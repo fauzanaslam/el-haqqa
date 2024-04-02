@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="md:px-12 p-4 max-w-s mx-auto mt-24" id="about">
       <div className="md:p-9 px-6 py-8">
-        <div className="flex flex-col md:flex-row-reverse justify-between items-center gap-10">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-10">
           <motion.div
             variants={fadeIn("right", 0.2)}
             initial="hidden"

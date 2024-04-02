@@ -13,10 +13,10 @@ const Features = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="lg:w-1/4"
+          className="lg:w-1/2"
         >
           <h3 className="text-3xl text-primary font-bold lg:w-1/2 mb-3">
-            Kenapa harus Flashsoft Indoensia?
+            Kenapa Harus Flashsoft Indonesia?
           </h3>
           <p className="text-base text-tartiary">
             beberapa alasan kenapa kamu harus pilih Flashsoft Indonesia.

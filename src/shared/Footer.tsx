@@ -16,20 +16,6 @@ const Footer = () => {
             <span className="text-white">Flashsoft Indonesia</span>
           </a>
           <p className="md-1/2">Software Development and Training Center</p>
-          {/* <div>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Your email"
-              className="bg-[#9a7af159] py-2 px-4 rounded-md focus:outline-none"
-            />
-            <input
-              type="submit"
-              value="Subcribe"
-              className="px-4 py-2 bg-secondary rounded-md ml-2 cursor-pointer hover:bg-white hover:text-primary transition-all duration-300"
-            />
-          </div> */}
         </div>
         <div className="md:w-1/2 flex flex-col md:flex-row flex-wrap justify-between gap-8 items-start">
           <div className="space-y-4 mt-5">
