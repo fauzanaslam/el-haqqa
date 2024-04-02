@@ -14,7 +14,7 @@ const News = () => {
               />
             </div>
             <div className="h-[100%]">
-              <h5 className="text-2xl font-semibold text-primary mt-5">
+              <h5 className="text-2xl font-semibold text-primary mt-5 hover:text-gray-300">
                 CLOUDCAMP Ramadhan Hackathon 2024
               </h5>
               <div className="flex gap-5">
@@ -24,60 +24,66 @@ const News = () => {
             </div>
           </div>
         </a>
-        <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex items-center justify-between hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
-          <div>
-            <img
-              src={hackathon}
-              alt="terupdate"
-              className="rounded justify-center"
-            />
-          </div>
-          <div className="h-[100%]">
-            <h5 className="text-2xl font-semibold text-primary mt-5">
-              CLOUDCAMP Ramadhan Hackathon 2024
-            </h5>
-            <div className="flex gap-5">
-              <p className="text-red">penulis</p>
-              <p className="text-yellow">diterbitkan</p>
+        <a href="/detail">
+          <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex items-center justify-between hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
+            <div>
+              <img
+                src={hackathon}
+                alt="terupdate"
+                className="rounded justify-center"
+              />
+            </div>
+            <div className="h-[100%]">
+              <h5 className="text-2xl font-semibold text-primary mt-5 hover:text-gray-300">
+                CLOUDCAMP Ramadhan Hackathon 2024
+              </h5>
+              <div className="flex gap-5">
+                <p className="text-red">penulis</p>
+                <p className="text-yellow">diterbitkan</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex items-center justify-between hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
-          <div>
-            <img
-              src={hackathon}
-              alt="terupdate"
-              className="rounded justify-center"
-            />
-          </div>
-          <div className="h-[100%]">
-            <h5 className="text-2xl font-semibold text-primary mt-5">
-              CLOUDCAMP Ramadhan Hackathon 2024
-            </h5>
-            <div className="flex gap-5">
-              <p className="text-red">penulis</p>
-              <p className="text-yellow">diterbitkan</p>
+        </a>
+        <a href="/detail">
+          <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex items-center justify-between hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
+            <div>
+              <img
+                src={hackathon}
+                alt="terupdate"
+                className="rounded justify-center"
+              />
+            </div>
+            <div className="h-[100%]">
+              <h5 className="text-2xl font-semibold text-primary mt-5 hover:text-gray-300">
+                CLOUDCAMP Ramadhan Hackathon 2024
+              </h5>
+              <div className="flex gap-5">
+                <p className="text-red">penulis</p>
+                <p className="text-yellow">diterbitkan</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex items-center justify-between hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
-          <div>
-            <img
-              src={hackathon}
-              alt="terupdate"
-              className="rounded justify-center"
-            />
-          </div>
-          <div className="h-[100%]">
-            <h5 className="text-2xl font-semibold text-primary mt-5">
-              CLOUDCAMP Ramadhan Hackathon 2024
-            </h5>
-            <div className="flex gap-5">
-              <p className="text-red">penulis</p>
-              <p className="text-yellow">diterbitkan</p>
+        </a>
+        <a href="/detail">
+          <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex items-center justify-between hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
+            <div>
+              <img
+                src={hackathon}
+                alt="terupdate"
+                className="rounded justify-center"
+              />
+            </div>
+            <div className="h-[100%]">
+              <h5 className="text-2xl font-semibold text-primary mt-5 hover:text-gray-300">
+                CLOUDCAMP Ramadhan Hackathon 2024
+              </h5>
+              <div className="flex gap-5">
+                <p className="text-red">penulis</p>
+                <p className="text-yellow">diterbitkan</p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );

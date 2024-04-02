@@ -29,7 +29,7 @@ const Features = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 items-center justify-center hover:-translate-y-4 transition-all duration- 300 cursor-pointer"
+              className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 items-center justify-center"
             >
               <img src={updateImg} alt="terupdate" />
               <h5 className="text-2xl font-semibold text-primary px-5 text-center mt-5">
@@ -41,7 +41,7 @@ const Features = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 items-center justify-center hover:-translate-y-4 transition-all duration- 300 cursor-pointer md:mt-16"
+              className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 items-center justify-center md:mt-16"
             >
               <img src={priceImg} alt="terjangkau" />
               <h5 className="text-2xl font-semibold text-primary px-5 text-center mt-5">
@@ -53,7 +53,7 @@ const Features = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 items-center justify-center hover:-translate-y-4 transition-all duration- 300 cursor-pointer"
+              className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 items-center justify-center"
             >
               <img src={fleksibleImg} alt="fleksible" />
               <h5 className="text-2xl font-semibold text-primary px-5 text-center mt-5">
