@@ -33,8 +33,8 @@ const About = () => {
               menjadi seorang web developer.
             </p>
             <a
+              href="https://api.whatsapp.com/send?phone=6285363834829&text=hallo, saya ingin menanyakan paket yang tersedia"
               className="btnPrimary"
-              href="https://api.whatsapp.com/send?phone=6285363834829"
             >
               Hubungi Kami
             </a>
@@ -66,8 +66,8 @@ const About = () => {
               mitra yang sudah expert dibidangnya.
             </p>
             <a
+              href="https://api.whatsapp.com/send?phone=6285363834829&text=hallo, saya ingin menanyakan paket yang tersedia"
               className="btnPrimary"
-              href="https://api.whatsapp.com/send?phone=6285363834829"
             >
               Hubungi Kami
             </a>

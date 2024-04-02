@@ -134,8 +134,8 @@ const Pricing = () => {
             </ul>
             <div className="w-full mx-auto mt-8 flex items-center justify-center">
               <a
+                href="https://api.whatsapp.com/send?phone=6285363834829&text=hallo, saya ingin menanyakan paket yang tersedia"
                 className="btnPrimary"
-                href="https://api.whatsapp.com/send?phone=6285363834829"
               >
                 Hubungi Kami
               </a>

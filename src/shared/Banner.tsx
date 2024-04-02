@@ -36,7 +36,7 @@ const Banner = ({
           <p className="text-black text-2xl mb-8">{subheading}</p>
           <div className="space-x-5 sapce-y-4">
             <a
-              href="https://api.whatsapp.com/send?phone=6285363834829"
+              href="https://api.whatsapp.com/send?phone=6285363834829&text=hallo, saya ingin menanyakan paket yang tersedia"
               className="btnPrimary"
             >
               {btn1}
