@@ -24,7 +24,7 @@ const News = () => {
             </div>
           </div>
         </a>
-        <a href="/detail">
+        <a href="http://127.0.0.1:5173/detail">
           <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex items-center justify-between hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
             <div>
               <img
@@ -64,7 +64,7 @@ const News = () => {
             </div>
           </div>
         </a>
-        <a href="/detail">
+        <a href="http://127.0.0.1:5173/detail">
           <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex items-center justify-between hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
             <div>
               <img
