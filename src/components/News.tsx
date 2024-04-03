@@ -22,11 +22,19 @@ const News = () => {
 
   console.log(newsData);
 
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    const year = date.getFullYear();
+    const month = date.toLocaleString("default", { month: "long" });
+    const day = date.getDate();
+    return `${day} ${month} ${year}`;
+  };
+
   return (
     <div className="my-10 md:px-14 px-4 max-w-screen-2xl mx-auto">
       <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 item-start md:gap-12 gap-8">
         {newsData.map((news: NewsItem) => (
-          <a href="/detail" key={news.id}>
+          <a href={`/news/${news.id}`} key={news.id}>
             <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex items-center justify-between hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
               <div>
                 <img
@@ -41,7 +49,7 @@ const News = () => {
                 </h5>
                 <div className="flex gap-5">
                   <p className="text-red">penulis</p>
-                  <p className="text-yellow">{news.updatedAt}</p>
+                  <p className="text-yellow">{formatDate(news.updatedAt)}</p>
                 </div>
               </div>
             </div>
