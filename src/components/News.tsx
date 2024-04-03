@@ -35,12 +35,12 @@ const News = () => {
       <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 item-start md:gap-12 gap-8">
         {newsData.map((news: NewsItem) => (
           <a href={`/news/${news.id}`} key={news.id}>
-            <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex items-center justify-between hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
+            <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
               <div>
                 <img
                   src={news.url}
                   alt="terupdate"
-                  className="max-h-[200px] max-w-[290px]"
+                  className="max-h-[200px] max-w-[300px]"
                 />
               </div>
               <div className="h-[100%]">
