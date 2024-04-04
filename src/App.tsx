@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import DetailPage from "./pages/DetailPage";
 import AdminPage from "./pages/AdminPage";
 import AddNews from "./pages/AddNews";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/news/:newsId" element={<DetailPage />} />
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/admin/add-news" element={<AddNews />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );

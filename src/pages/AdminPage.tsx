@@ -1,6 +1,8 @@
-// import hackathon from "../assets/hackathon.png";
+import { useAppContext } from "../contexts/AppContext";
 import { useMutation, useQuery } from "react-query";
 import * as apiClient from "../api-client";
+import SignOutButton from "../components/signoutButton";
+import Login from "./Login";
 
 interface NewsItem {
   id: string;
@@ -20,6 +22,12 @@ const AdminPage = () => {
   const deleteMutation = useMutation((newsId: string) =>
     apiClient.deleteNews(newsId)
   );
+
+  const { isLoggedIn } = useAppContext();
+
+  if (!isLoggedIn) {
+    return <Login />;
+  }
 
   if (isLoading) return <div>Loading...</div>;
   if (isError) return <div>Error fetching data</div>;
@@ -44,47 +52,54 @@ const AdminPage = () => {
   };
 
   return (
-    <div className="my-10 md:px-14 px-4 max-w-screen-2xl mx-auto">
-      <div className="my-10">
-        <a href="/admin/add-news">
-          <button className="bg-primary text-white rounded px-5 py-2 hover:bg-gray-500">
-            add news
-          </button>
-        </a>
+    <>
+      <div className="bg-yellow">
+        <SignOutButton />
       </div>
-      <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 item-start md:gap-12 gap-8">
-        {newsData.map((news: NewsItem) => (
-          <div key={news.id}>
-            <a href={`/news/${news.id}`}>
-              <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex items-center hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
-                <div>
-                  <img
-                    src={news.url}
-                    alt="terupdate"
-                    className="max-h-[200px] max-w-[290px]"
-                  />
-                </div>
-                <div className="h-[100%]">
-                  <h5 className="text-2xl font-seibold text-primary mt-5 hover:text-gray-300">
-                    {news.header}
-                  </h5>
-                  <div className="flex gap-5">
-                    <p className="text-red">penulis</p>
-                    <p className="text-yellow">{formatDate(news.updatedAt)}</p>
+      <div className="my-10 md:px-14 px-4 max-w-screen-2xl mx-auto">
+        <div className="my-10">
+          <a href="/admin/add-news">
+            <button className="bg-primary text-white rounded px-5 py-2 hover:bg-gray-500">
+              add news
+            </button>
+          </a>
+        </div>
+        <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 item-start md:gap-12 gap-8">
+          {newsData.map((news: NewsItem) => (
+            <div key={news.id}>
+              <a href={`/news/${news.id}`}>
+                <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex items-center hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
+                  <div>
+                    <img
+                      src={news.url}
+                      alt="terupdate"
+                      className="max-h-[200px] max-w-[290px]"
+                    />
+                  </div>
+                  <div className="h-[100%]">
+                    <h5 className="text-2xl font-seibold text-primary mt-5 hover:text-gray-300">
+                      {news.header}
+                    </h5>
+                    <div className="flex gap-5">
+                      <p className="text-red">penulis</p>
+                      <p className="text-yellow">
+                        {formatDate(news.updatedAt)}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-            <button
-              onClick={() => handleDeleteNews(news.id)}
-              className="bg-red text-white rounded px-5 py-2 my-2 hover:bg-gray-500"
-            >
-              Delete
-            </button>
-          </div>
-        ))}
+              </a>
+              <button
+                onClick={() => handleDeleteNews(news.id)}
+                className="bg-red text-white rounded px-5 py-2 my-2 hover:bg-gray-500"
+              >
+                Delete
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

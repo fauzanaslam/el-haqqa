@@ -2,6 +2,8 @@ import { useForm } from "react-hook-form";
 import { useMutation } from "react-query";
 import * as apiClient from "../api-client";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useAppContext } from "../contexts/AppContext";
+import Login from "./Login";
 
 type NewsFormData = {
   header: string;
@@ -26,6 +28,12 @@ const AddNews = () => {
     },
   });
 
+  const { isLoggedIn } = useAppContext();
+
+  if (!isLoggedIn) {
+    return <Login />;
+  }
+
   const onSubmit = handleSubmit(async (formData: NewsFormData) => {
     const formDataToSend = new FormData();
     formDataToSend.append("header", formData.header);
@@ -39,8 +47,8 @@ const AddNews = () => {
   });
 
   return (
-    <div className="md:px-14 px-4 max-w-screen-2xl bg-gray-200 min-h-screen">
-      <div className="container m-auto w-full max-w-2xl pt-16 ">
+    <div className="md:px-14 px-4 max-w-screen-2xl bg-gray-200 min-h-screen flex items-center justify-center">
+      <div className="container m-auto w-full max-w-2xl py-2">
         <form
           className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
           onSubmit={onSubmit}
