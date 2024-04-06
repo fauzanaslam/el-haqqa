@@ -68,7 +68,7 @@ const AdminPage = () => {
           {newsData.map((news: NewsItem) => (
             <div key={news.id}>
               <a href={`/news/${news.id}`}>
-                <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex items-center hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
+                <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex items-center hover:shadow-3xl transition-all duration-300 cursor-pointer gap-3">
                   <div>
                     <img
                       src={news.url}
