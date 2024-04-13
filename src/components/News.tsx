@@ -36,11 +36,11 @@ const News = () => {
         {newsData.map((news: NewsItem) => (
           <a href={`/news/${news.id}`} key={news.id}>
             <div className="bg-[rgba(255, 255, 255, 0.04)] md:flex hover:-translate-y-4 transition-all duration-300 cursor-pointer gap-3">
-              <div>
+              <div className="h-[200px]">
                 <img
                   src={news.url}
                   alt="terupdate"
-                  className="max-h-[200px] max-w-[300px]"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <div className="h-[100%]">
