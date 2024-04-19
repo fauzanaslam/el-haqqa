@@ -9,9 +9,9 @@ nav {
 }
 
 .gradientBg {
-  background: linear-gradient(99deg, #fadb4c 0%, #fadb4c 100%);
+  background: linear-gradient(99deg, #874ccc 0%, #c65bcf 100%);
 }
 
 .btnPrimary {
-  @apply py-3 px-8 bg-red font-semibold text-white rounded hover:bg-primary transition-all duration-300;
+  @apply py-3 px-8 bg-[#F27BBD] font-semibold text-white rounded hover:bg-primary transition-all duration-300;
 }

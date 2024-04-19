@@ -9,8 +9,8 @@ const Home = () => {
         <div className="flex flex-col md:flex-row-reverse justify-between items-center">
           <Lottie animationData={homeAnimation} className="md:w-[500px]" />
           <Banner
-            heading="Flashsoft Indonesia"
-            subheading="Software Development and Programming School"
+            heading="Achievement, Sholeh, Intelect, Character - ASIC"
+            subheading="Born to be ASIC Generation"
             btn1="Hubungi Kami"
           />
         </div>

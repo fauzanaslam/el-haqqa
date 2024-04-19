@@ -1,6 +1,4 @@
 import { useState } from "react";
-import logo from "../assets/flashsoft.png";
-// import { GrLanguage } from "react-icons/gr";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { Link } from "react-scroll";
 
@@ -20,19 +18,19 @@ const Navbar = () => {
   ];
   return (
     <>
-      <nav className="bg-white md:px-14 p-4 max-w-screen-2xl border-b mx-auto text-primary fixed top-0 right-0 left-0">
+      <nav className="bg-[#10439F] md:px-14 p-4 max-w-screen-2xl border-b mx-auto text-white fixed top-0 right-0 left-0">
         <div className="text-lg container mx-auto flex justify-between items-center font-medium">
           <div className="flex space-x-14 items-center">
             <a
               href="/"
-              className="text-2xl font-semibold items-center space-x-3 text-primary"
+              className="text-2xl font-semibold items-center space-x-3"
             >
               <img
-                src={logo}
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9w5g7s9UT_XyHNDTQeBCUORwbHoMS2RWWZmpYiqD-PIc1RN5XttcF2C-K5MNPeO567ZU9r_2wE_O6VGq1ZdtyzU8PaD1gsvvIS6ThCh6V8NAOgsEFkHW97BjvReA40HBwXD5VUKtZfAjJXprqhWXnz_AanpEAeT9xu0bpnOtbYl7x40UQ8NtocUs/w75-h96/LOGO%20ELHAQQA1%20-%20White1.png"
                 alt=""
                 className="w-10 inline-block items-center"
               />
-              <span>Flashsoft Indonesia</span>
+              <span>El Haqqa Quranic School</span>
             </a>
             <ul className="md:flex space-x-12 hidden">
               {navItem.map(({ link, path }) => (
