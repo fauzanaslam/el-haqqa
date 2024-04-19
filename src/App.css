@@ -13,5 +13,5 @@ nav {
 }
 
 .btnPrimary {
-  @apply py-3 px-8 bg-[#F27BBD] font-semibold text-white rounded hover:bg-primary transition-all duration-300;
+  @apply py-3 px-8 bg-[#10439F] font-semibold text-white rounded hover:bg-primary transition-all duration-300;
 }

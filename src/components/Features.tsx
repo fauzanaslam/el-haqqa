@@ -1,6 +1,6 @@
-import updateImg from "../assets/updated.png";
-import priceImg from "../assets/harga.png";
-import fleksibleImg from "../assets/fleksible.png";
+import updateImg from "../assets/success.png";
+import priceImg from "../assets/homerun.png";
+import fleksibleImg from "../assets/snow.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
@@ -16,10 +16,11 @@ const Features = () => {
           className="lg:w-1/2"
         >
           <h3 className="text-3xl text-primary font-bold lg:w-1/2 mb-3">
-            Kenapa Harus Flashsoft Indonesia?
+            Achievement, Sholeh, Intelect, Character - ASIC
           </h3>
-          <p className="text-base text-tartiary">
-            beberapa alasan kenapa kamu harus pilih Flashsoft Indonesia.
+          <p className="text-base text-slate-800">
+            Melahirkan generasi yang sholeh, cerdas, berprestasi, dan
+            berkarakter
           </p>
         </motion.div>
         <div>
@@ -33,7 +34,7 @@ const Features = () => {
             >
               <img src={updateImg} alt="terupdate" />
               <h5 className="text-2xl font-semibold text-primary px-5 text-center mt-5">
-                Materi Terupdate
+                Melahirkan generasi yang berprestasi
               </h5>
             </motion.div>
             <motion.div
@@ -45,7 +46,7 @@ const Features = () => {
             >
               <img src={priceImg} alt="terjangkau" />
               <h5 className="text-2xl font-semibold text-primary px-5 text-center mt-5">
-                Harga terjangkau
+                Melahirkan generasi yang cerdas
               </h5>
             </motion.div>
             <motion.div
@@ -57,7 +58,7 @@ const Features = () => {
             >
               <img src={fleksibleImg} alt="fleksible" />
               <h5 className="text-2xl font-semibold text-primary px-5 text-center mt-5">
-                Jadwal fleksibel
+                Melahirkan generasi yang sholeh
               </h5>
             </motion.div>
           </div>

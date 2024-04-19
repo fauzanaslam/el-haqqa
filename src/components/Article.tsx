@@ -44,7 +44,7 @@ const Article = () => {
               <div className="flex flex-col md:flex-row justify-between items-center gap-10">
                 <div>
                   <img
-                    src={item.icon}
+                    src="https://placehold.co/600x400"
                     alt={item.description}
                     className="lg-h-[386px]"
                   />

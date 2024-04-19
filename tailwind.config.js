@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#010851",
-        secondary: "#9A7AF1",
-        tartiary: "#707070",
+        primary: "#874CCC",
+        secondary: "#C65BCF",
+        tartiary: "#F27BBD",
         pink: "#EE9AE5",
         red: "#E72929",
         yellow: "#fadb4c",

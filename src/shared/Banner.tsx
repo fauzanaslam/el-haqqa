@@ -20,10 +20,10 @@ const Banner = ({
       viewport={{ once: false, amount: 0.7 }}
       className="md:w-3/5"
     >
-      <h2 className="md:text-7xl text-2xl font-bold text-white mb-6 leading-relaxed">
+      <h2 className="md:text-5xl text-2xl font-bold text-white mb-6 leading-relaxed">
         {heading}
       </h2>
-      <p className="text-black md:text-2xl mb-8">{subheading}</p>
+      <p className="text-slate-800 md:text-2xl mb-8">{subheading}</p>
       <a
         href="https://api.whatsapp.com/send?phone=6285363834829&text=hallo, saya ingin menanyakan paket yang tersedia"
         className="btnPrimary inline-block mb-6"

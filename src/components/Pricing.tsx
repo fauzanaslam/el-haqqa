@@ -1,33 +1,30 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+// import { useState } from "react";
 import { fadeIn } from "../variants";
 import yellowDot from "../assets/yellowDot.png";
 
 const Pricing = () => {
-  const [isYearly, setIsYearly] = useState(false);
+  // const [isYearly, setIsYearly] = useState(false);
 
   const packages = [
     {
-      name: "Coolyeah",
-      monthlyPrice: "340.000",
-      yearlyPrice: "1.232.000",
-      description: "PHP / Java / C / Andriod / Python / JavaScript",
+      name: "RA El Haqqa Quranic School",
+      description:
+        "Melahirkan generasi yang sholeh, cerdas, berprestasi, dan berkarakter",
       green: "/src/assets/rec1.png",
       yellow: yellowDot,
     },
     {
-      name: "Private",
-      monthlyPrice: "1.150.000",
-      yearlyPrice: "2.950.000",
-      description: "PHP / Java / C / Andriod / Python / JavaScript",
+      name: "SD El Haqqa Quranic School",
+      description:
+        "Melahirkan generasi yang sholeh, cerdas, berprestasi, dan berkarakter",
       green: "/src/assets/rec1.png",
       yellow: yellowDot,
     },
     {
-      name: "Live Coding",
-      monthlyPrice: "1.550.000",
-      yearlyPrice: "2.950.000",
-      description: "PHP / Java / C / Andriod / Python / JavaScript",
+      name: "SMP-SMA Alam El Haqqa",
+      description:
+        "Melahirkan generasi yang sholeh, cerdas, berprestasi, berkarakter dan mandiri",
       green: "/src/assets/rec1.png",
       yellow: yellowDot,
     },
@@ -35,7 +32,7 @@ const Pricing = () => {
 
   return (
     <div className="md:px-14 p-4 max-w-s mx-auto py-10" id="pricing">
-      <motion.div
+      {/* <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         whileInView={"show"}
@@ -73,7 +70,7 @@ const Pricing = () => {
             onChange={() => setIsYearly(!isYearly)}
           />
         </div>
-      </motion.div>
+      </motion.div> */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto">
         {packages.map((pkg, index) => (
           <motion.div
@@ -88,48 +85,28 @@ const Pricing = () => {
               {pkg.name}
             </h3>
             <p className="text-tartiary text-center my-5">{pkg.description}</p>
-            <p className="mt-5 text-center text-red text-2xl font-bold">
+            {/* <p className="mt-5 text-center text-red text-2xl font-bold">
               {isYearly ? `Rp.${pkg.yearlyPrice}` : `Rp.${pkg.monthlyPrice}`}
               <span className="text-base text-tartiary font-medium">
                 /{isYearly ? "3 bulan" : "bulan"}
               </span>
-            </p>
+            </p> */}
             <ul className="mt-4 space-y-2 px-4">
               <li className="flex gap-3 items-center">
                 <img src={pkg.yellow} alt="" className="w-4 h-4" />
-                Durasi 120 menit
+                Achievement
               </li>
               <li className="flex gap-3 items-center">
                 <img src={pkg.yellow} alt="" className="w-4 h-4" />
-                Reguler Senin - Jumat
+                Sholeh
               </li>
               <li className="flex gap-3 items-center">
                 <img src={pkg.yellow} alt="" className="w-4 h-4" />
-                Reguler Pagi/Siang
+                Intelect
               </li>
               <li className="flex gap-3 items-center">
                 <img src={pkg.yellow} alt="" className="w-4 h-4" />
-                Tersedia Non-Reguler
-              </li>
-              <li className="flex gap-3 items-center">
-                <img src={pkg.yellow} alt="" className="w-4 h-4" />
-                Free Konsultasi
-              </li>
-              <li className="flex gap-3 items-center">
-                <img src={pkg.yellow} alt="" className="w-4 h-4" />
-                Free Komunitas
-              </li>
-              <li className="flex gap-3 items-center">
-                <img src={pkg.yellow} alt="" className="w-4 h-4" />
-                Mentor Berpengalaman
-              </li>
-              <li className="flex gap-3 items-center">
-                <img src={pkg.yellow} alt="" className="w-4 h-4" />
-                Private Full Belajar
-              </li>
-              <li className="flex gap-3 items-center">
-                <img src={pkg.yellow} alt="" className="w-4 h-4" />
-                Instan dan Belajar
+                Character
               </li>
             </ul>
             <div className="w-full mx-auto mt-8 flex items-center justify-center">
