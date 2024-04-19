@@ -9,7 +9,7 @@ const Home = () => {
         <div className="flex flex-col md:flex-row-reverse justify-between items-center">
           <Lottie
             animationData={homeAnimation}
-            className="md:w-[500px] py-12"
+            className="md:w-[500px] py-10"
           />
           <Banner
             heading="Achievement, Sholeh, Intelect, Character - ASIC"
